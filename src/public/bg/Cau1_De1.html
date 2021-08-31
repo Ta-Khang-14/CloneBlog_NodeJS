@@ -1,0 +1,204 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .row, ul {
+                display: flex;
+            }
+            .row {
+                flex-wrap: wrap;
+                margin: 0 0px 10px 0px;
+            }
+            .col {
+               /* margin:0 12px;  */
+            }
+            .l-3 {
+                flex-basis: 25%;
+            }
+            .l-9 {
+                flex-basis: 75%;
+            }
+            .l-5 {
+                flex-basis: 50%;
+            }
+            ul {
+                list-style: none;
+            }
+            .title {
+                height: 40px;
+                background-image: linear-gradient(to right,rgb(201, 60, 60), transparent);
+                line-height: 40px;
+                font-size: 1.6rem;
+            }
+            ul {
+                margin-top: 5px;
+                width: 100%;
+                justify-content: space-around;
+            }
+            ul li {
+                font-size: 1.2rem;
+            }
+            .itemProduct {
+                padding: 10px;
+                height: 170px;
+                text-align: center;
+            }
+            .itemProduct img {
+                width: 50%;
+                height: 80%;
+            }
+            .detailProduct {
+                height: 700px;
+                padding: 30px;
+                padding-top: 80px;
+
+            }
+            .detailProduct .img {
+                height: 300px;
+                width: 100%;
+                margin-bottom: 30px;
+                overflow: hidden;
+            }
+            .img img{
+                width: 100%;
+                height: 100%;
+                transition: all 0.2s linear;
+            }
+            .img:hover img {
+                transform: scale(1.1,1.1);
+            }
+            h2 {
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            h2:hover {
+                color: red;
+            }
+            .price {
+                font-size: 1.2rem;
+            }
+            .up {
+                display: block;
+                position: relative;
+                color: green;
+            }
+            .up::after {
+                content: '-10%';
+                position: absolute;
+                top: 0;
+                right: 10px;
+                background-color: red;
+                color: white;
+            }
+            .down {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <div class="row">
+               <div class="col l-3 title">Đây là title</div>
+               <div class="col l-9 navbar">
+                   <ul>
+                       <li>Sản phẩm</li>
+                       <li>Sản phẩm</li>
+                       <li>Sản phẩm</li>
+                       <li>Sản phẩm</li>
+                       <li>Sản phẩm</li>
+                       <li>Sản phẩm</li>
+                   </ul>
+               </div>
+           </div>
+           <div class="row">
+               <div class="col l-3 listProduct">
+                    <div class="row">
+                        <div class="itemProduct col l-5">
+                            <img src="../Artworks/17g2yi4.jpg" alt="#">
+                            <br>
+                            <span>Tên sản phẩm</span>
+                        </div>
+                        <div class="itemProduct col l-5">
+                            <img src="../Artworks/17g2yi4.jpg" alt="#">
+                            <br>
+                            <span>Tên sản phẩm</span>
+                        </div>
+                        <div class="itemProduct col l-5">
+                            <img src="../Artworks/17g2yi4.jpg" alt="#">
+                            <br>
+                            <span>Tên sản phẩm</span>
+                        </div>
+                        <div class="itemProduct col l-5">
+                            <img src="../Artworks/17g2yi4.jpg" alt="#">
+                            <br>
+                            <span>Tên sản phẩm</span>
+                        </div>
+                        <div class="itemProduct col l-5">
+                            <img src="../Artworks/17g2yi4.jpg" alt="#">
+                            <br>
+                            <span>Tên sản phẩm</span>
+                        </div>
+                        <div class="itemProduct col l-5">
+                            <img src="../Artworks/17g2yi4.jpg" alt="#">
+                            <br>
+                            <span>Tên sản phẩm</span>
+                        </div>
+                    </div>
+               </div>
+               <div class="col l-9 showProduct">
+                   <div class="row">
+                       <div class="col l-3 detailProduct">
+                            <div class="img">
+                                <img src="../Artworks/1sZDQo9.jpg" alt="#">
+                            </div>
+                            <h2>Tên chi tiết của sản phẩm.</h2>
+                           <span class="up price">900.000đ</span>
+                            <br>
+                            <br>
+                            <span class="down price">1.000.000đ</span>
+                       </div>
+                       <div class="col l-3 detailProduct">
+                            <div class="img">
+                                <img src="../Artworks/1sZDQo9.jpg" alt="#">
+                            </div>
+                            <h2>Tên chi tiết của sản phẩm.</h2>
+                           <span class="up price">900.000đ</span>
+                            <br>
+                            <br>
+                            <span class="down price">1.000.000đ</span>
+                       </div>
+                       <div class="col l-3 detailProduct">
+                            <div class="img">
+                                <img src="../Artworks/1sZDQo9.jpg" alt="#">
+                            </div>
+                            <h2>Tên chi tiết của sản phẩm.</h2>
+                           <span class="up price">900.000đ</span>
+                            <br>
+                            <br>
+                            <span class="down price">1.000.000đ</span>
+                       </div>
+                       <div class="col l-3 detailProduct">
+                            <div class="img">
+                                <img src="../Artworks/1sZDQo9.jpg" alt="#">
+                            </div>
+                            <h2>Tên chi tiết của sản phẩm.</h2>
+                           <span class="up price">900.000đ</span>
+                            <br>
+                            <br>
+                            <span class="down price">1.000.000đ</span>
+                       </div>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </body>
+    </html>
