@@ -10,7 +10,6 @@ async function connect() {
         });
         console.log('Connect successfully');
     } catch(err) {
-        console.log(err)
         console.log('Connect failure');
         process.exit(1);
     }   
